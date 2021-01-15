@@ -68,9 +68,8 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnizq"
+        style="@style/btn"
         android:text="@string/btn_izq"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toStartOf="@+id/gl45"
         app:layout_constraintStart_toStartOf="@+id/gl20"
@@ -78,15 +77,13 @@
 
     <Button
         android:id="@+id/btnder"
-        android:text="@string/btn_der"
+        style="@style/btn"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:text="@string/btn_der"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toStartOf="@+id/gl20end"
         app:layout_constraintStart_toStartOf="@+id/gl55"
         tools:ignore="MissingConstraints" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
