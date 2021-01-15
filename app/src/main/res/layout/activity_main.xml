@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <TextView
         android:id="@+id/tvappname"
@@ -66,24 +66,32 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_end="16dp" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnizq"
-        style="@style/btn"
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/btn_izq"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
-        app:layout_constraintEnd_toStartOf="@+id/gl45"
-        app:layout_constraintStart_toStartOf="@+id/gl20"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toStartOf="@+id/glcentro"
+        app:layout_constraintStart_toStartOf="@+id/gl20" />
 
-    <Button
-        android:id="@+id/btnder"
-        style="@style/btn"
-        android:layout_width="0dp"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:text="@string/btn_der"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toStartOf="@+id/gl20end"
-        app:layout_constraintStart_toStartOf="@+id/gl55"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintStart_toStartOf="@+id/glcentro" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_add_24"
+        app:layout_constraintBottom_toTopOf="@+id/materialButton"
+        app:layout_constraintEnd_toStartOf="@+id/gl20end" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
